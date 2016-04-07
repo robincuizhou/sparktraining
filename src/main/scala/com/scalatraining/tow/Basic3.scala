@@ -7,15 +7,16 @@ class Basic3 {
 
 }
 
-abstract class Person1{
+abstract class Person1 {
   def speak
-  val name:String
-  var age:Int
+
+  val name: String
+  var age: Int
 }
 
-class Student1 extends Person1{
+class Student1 extends Person1 {
 
-  def speak: Unit ={
+  def speak: Unit = {
     println("hello school")
   }
 
@@ -24,23 +25,23 @@ class Student1 extends Person1{
 
 }
 
-trait Logger{
+trait Logger {
 
-  def log(msg:String): Unit ={
+  def log(msg: String): Unit = {
     println("log:" + msg)
   }
 
 }
 
 // 第一个混入的特质， 不可能没有extends 直接with
-class Test extends Logger{
-  def test(msg : String): Unit ={
-     log("xxx")
+class Test extends Logger {
+  def test(msg: String): Unit = {
+    log("xxx")
   }
 
 }
 
-object Basic3 extends App{
+object Basic3 extends App {
 
   val s = new Student1
   s.speak
@@ -49,7 +50,6 @@ object Basic3 extends App{
 
   val t = new Test
   t.test("anything")
-
 
 
 }

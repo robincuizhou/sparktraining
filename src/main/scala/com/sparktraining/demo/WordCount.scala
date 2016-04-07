@@ -16,7 +16,7 @@ monitor cuizhou:8080
 
 object WordCount {
 
-  def main(args:Array[String]): Unit ={
+  def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf()
       //      .setMaster("spark://cuizhou:8888")
@@ -30,7 +30,7 @@ object WordCount {
 
     val line = sc.textFile("hdfs://cuizhou:9000/user/root/wifi.log")
     //
-    line.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_+_).collect().foreach(println)
+    line.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _).collect().foreach(println)
     line.cache()
     //
     sc.stop()
