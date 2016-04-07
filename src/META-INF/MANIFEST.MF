@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: spark-assembly-1.4.1-hadoop2.7.1.jar datanucleus-api-jdo-3
+ .2.1.jar datanucleus-core-3.2.2.jar datanucleus-rdbms-3.2.1.jar spark
+ -1.4.1-yarn-shuffle.jar spark-examples-1.4.1-hadoop2.7.1.jar tachyon-
+ client-0.7.1-jar-with-dependencies.jar scala-library-2.10.4.jar scala
+ -reflect-2.10.4.jar
+Main-Class: com.sparktraining.demo.WordCount
+

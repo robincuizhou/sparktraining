@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spark-assembly-1.4.1-hadoop2.7.1">
+    <CLASSES>
+      <root url="jar:///usr/local/spark-1.4.1-bin-hadoop-2.7.1-with-hive/lib/spark-assembly-1.4.1-hadoop2.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

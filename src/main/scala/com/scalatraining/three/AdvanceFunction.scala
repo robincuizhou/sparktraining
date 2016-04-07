@@ -44,6 +44,7 @@ object AdvanceFunction {
     val tmp = mulBy(2)
     println(tmp(10))
     // 20.0
+
   }
 
 }

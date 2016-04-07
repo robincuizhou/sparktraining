@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="scala-training:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/scala_training_jar</output-path>
+    <root id="root">
+      <element id="archive" name="scala-training.jar">
+        <element id="module-output" name="scala-training" />
+      </element>
+      <element id="library" level="project" name="spark-assembly-1.4.1-hadoop2.7.1" />
+      <element id="library" level="project" name="datanucleus-api-jdo-3.2.1" />
+      <element id="library" level="application" name="scala-sdk-2.10.4" />
+    </root>
+  </artifact>
+</component>
